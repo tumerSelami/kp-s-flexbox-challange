@@ -1,0 +1,192 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: min(90%, 920px);
+    margin-inline: auto;
+}
+
+.nav-intro {
+    background-color: #3B4050;
+    color: #fff;
+}
+
+.intro {
+    padding-block: 1.6em;
+}
+
+header {
+    font-size: 26px;
+    margin-bottom: 1em;
+}
+
+.intro span {
+    color: #9c8558;
+}
+
+button {
+    margin-top: 1em;
+    border-style: none;
+    padding: 0.2em 0.6em;
+    font-size: 1.2em;
+    background-color: #9c8558;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .6em;
+    border-bottom: 6px double #2E323F;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #9c8558;
+}
+
+.tiles {
+    margin-block: 1.6em;
+}
+
+.tile {
+    text-align: center;
+}
+
+.tile + .tile {
+    margin-top: 1em;
+}
+
+h3,
+h2:not(.footer-header),
+h4 {
+    color: #9c8558;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin-block: 0.4em;
+}
+
+.content-tile {
+    background-color: #3B4050;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+.content-tile + .content-tile {
+    margin-top: 1em;
+}
+
+.footer {
+    background-color: #3B4050;
+    color: #fff;
+    padding-block: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #838383;
+}
+
+.footer-links + .footer-links,
+.footer-text {
+    padding-top: 0.4em;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+
+@media (min-width: 700px) {
+    .intro {
+        display: flex;
+    }
+
+    header {
+        font-size: 2em;
+    }
+
+    .intro-content {
+        align-self: center;
+    }
+
+    .tiles .container {
+        display: flex;
+        gap: 1em;
+    }
+
+    .tile + .tile {
+        margin-top: 0;
+    }
+
+    .content {
+        display: flex;
+        gap: 1em;
+        width: min(90%, 920px);
+        margin-inline: auto;
+    }
+
+    .content-tiles {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-tile {
+        padding: 1.1em 2em;
+    }
+
+    .footer-content {
+        display: flex;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .footer-links {
+        width: 70%;
+    }
+
+    .footer-links + .footer-links,
+    .footer-text {
+        padding-top: 0;
+    }
+
+    li:not(.nav-item) + li:not(.nav-item) {
+        margin-top: 0.6em;
+    }
+}
